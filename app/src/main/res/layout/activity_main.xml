@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/userImageIV"
+        android:background="@drawable/round_bg"
+        android:src="@drawable/firebase_logo"></ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailET"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="MAILS"
+        android:textColorHint="@color/colorBlack"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/round_bg"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:maxLength="250"
+        android:nextFocusDown="@id/passwordET"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordET"
+        android:layout_below="@id/emailET"
+        android:background="@drawable/round_bg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/enter_the_password_here"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:nextFocusDown="@id/signUpBtn"></EditText>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpBtn"
+        android:layout_below="@id/passwordET"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_bg"
+        android:layout_margin="10dp"
+        android:text="SigUp"
+        ></Button>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signInBtn"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_bg"
+        android:layout_below="@id/signUpBtn"
+        android:layout_centerInParent="true"
+        android:text="SignIn"
+        ></Button>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signGoogle"
+        android:background="@drawable/round_bg"
+        android:drawableStart="@drawable/google_logo"
+        android:drawableLeft="@drawable/google_logo"
+        android:layout_below="@id/signInBtn"
+        android:layout_centerInParent="true"
+        android:text="SignIn"
+
+        ></Button>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sigOutGoogle"
+        android:background="@drawable/round_bg"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/google_logo"
+        android:drawableLeft="@drawable/google_logo"
+        android:layout_below="@id/signGoogle"
+        android:layout_centerInParent="true"
+        android:text="SignOut"
+
+        ></Button>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTV"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/sigOutGoogle"
+        android:layout_marginLeft="100dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/useremailTV"
+
+        android:layout_below="@id/nameTV"
+        android:layout_marginLeft="100dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTV"
+
+        android:textSize="45sp"
+        android:layout_below="@id/useremailTV"
+        android:layout_marginLeft="100dp"></TextView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpProgressBar"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        ></ProgressBar>
+    />
+
+</RelativeLayout>

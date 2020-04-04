@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Signup and Sigin with Google and fb</string>
+    <string name="enter_email_here" />
+    <string name="enter_the_password_here" />
+</resources>
